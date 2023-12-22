@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>Evil study</title>
     <style>
-  
+  .column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
   </head>
   <body>
@@ -13,10 +23,23 @@
     <a href="mathmatics.html" style="color: red; border: blue 3px solid; padding-left: 8px; padding-right: 8px; padding-top: 5px; padding-bottom: 5px;">Mathmatics</a>
     <a href="science.html" style="color: red; border: blue 3px solid; padding-left: 8px; padding-right: 8px; padding-top: 5px; padding-bottom: 5px;">Science</a>
     <a href="socialstudies.html" style="color: red; border: blue 3px solid; padding-left: 8px; padding-right: 8px; padding-top: 5px; padding-bottom: 5px;">Social Studies</a>
-  </body>
-  <audio controls autoplay>
-  <source src="John-Wick-Believer-Music-VideoImagine-Dragons-BelieverFMV.ogg" type="audio/ogg">
-  <source src="John-Wick-Believer-Music-VideoImagine-Dragons-BelieverFMV.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+    <div class="row">
+  <div class="column">
+    <p>Select your subject</p>
+     <a href="english.html" style="color: red; border: blue 3px solid;">English</a>
+    <a href="mathmatics.html" style="color: red; border: blue 3px solid;">Mathmatics</a>
+    <a href="science.html" style="color: red; border: blue 3px solid; ">Science</a>
+    <a href="socialstudies.html" style="color: red; border: blue 3px solid;">Social Studies</a>
+  </div>
+  <div class="column">
+    
+  </div>
+  <div class="column">
+    
+  </div>
+  <div class="column">
+    
+  </div>
+</div>
+  </body><br>
 </html>
